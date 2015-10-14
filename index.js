@@ -32,7 +32,7 @@ class Pressure extends stream.Transform {
     }
 
     _transform (data, _, next) {
-        console.log('Transorm requested.', data);
+        console.log('Transform requested.', data);
         setTimeout(() => {
             console.log('Transform performed.');
             next(null, data);

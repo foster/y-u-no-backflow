@@ -1,0 +1,20 @@
+{
+  "name": "y-u-no-backflow",
+  "version": "1.0.0",
+  "description": "A toy project to experiment with ES6 generators and node stream backflow.",
+  "main": "index.js",
+  "engines": {
+    "node": "4.1.2"
+  },
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/foster/y-u-no-backflow.git"
+  },
+  "author": "Foster Hersey",
+  "private": true,
+  "license": "Unlicense",
+  "homepage": "https://github.com/foster/y-u-no-backflow"
+}

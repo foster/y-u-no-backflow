@@ -1,11 +1,8 @@
-'use strict'
+'use strict';
 
 const stream = require('stream');
 
-var ezPressure,
-    ezSink,
-    ezSource,
-    pressure,
+var pressure,
     sink,
     source;
 
@@ -28,13 +25,6 @@ class Source extends stream.Readable {
     }
 }
 source = new Source();
-
-ezSource = new stream.Readable({
-    objectMode: true,
-    read () {
-
-    }
-});
 
 class Pressure extends stream.Transform {
     constructor () {

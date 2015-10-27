@@ -9,16 +9,16 @@ var pressure,
 class Source extends stream.Readable {
     constructor () {
         super({objectMode: true, highWaterMark: 4});
-        this._generator = this.stuff();
+        this._iterator = this.stuffGenerator();
     }
 
     _read () {
-        var next = this._generator.next();
+        var next = this._iterator.next();
         console.log('Generating.');
         this.push(next.value || null);
     }
 
-    *stuff () {
+    *stuffGenerator () {
         for (let i = 1; i <= 20; i++) {
             yield { idx: i };
         }
